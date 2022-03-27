@@ -21,4 +21,4 @@ while month_number < 1 or month_number > 12:
     month_number = int(input("Input number of month (1-12) "))
 
 print(f"Dictionary says that it's a {season_dict[month_number]}")
-print(f"And list says that it's a {season_list[month_number-1]}" )
+print(f"And list says that it's a {season_list[month_number - 1]}")

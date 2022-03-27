@@ -1,13 +1,13 @@
 goods = []
 while True:
     name = input('Input name of product or stop to exit \n')
-    if name =='stop':
+    if name == 'stop':
         break
     product = {'name': name}
     product['price'] = input(f'Input price of {name} \n')
     product['quantity'] = input(f'Input quanntity of {name} \n')
     product['units'] = input(f'Input units of {name} \n')
-    goods.append((len(goods) + 1,product))
+    goods.append((len(goods) + 1, product))
 name_set = set()
 price_set = set()
 quantity_set = set()
