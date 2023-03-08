@@ -15,13 +15,13 @@ driver.get('https://account.mail.ru/login/')
 wait = WebDriverWait(driver, 15)
 
 input_name = driver.find_element(By.NAME, 'username')
-input_name.send_keys('kriyska@inbox.ru')
+input_name.send_keys('foo')
 #
 button_next = driver.find_element(By.XPATH, "//button[@data-test-id='next-button']")
 button_next.click()
 #
 input_pass = driver.find_element(By.XPATH, "//input[@name='password']")
-input_pass.send_keys('Anty12flag.')
+input_pass.send_keys('bar')
 input_pass.send_keys(Keys.ENTER)
 last_letter = None
 
